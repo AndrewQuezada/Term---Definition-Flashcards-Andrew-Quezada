@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background: rgb(255, 255, 255);
+}
+.contanainer{
+    width: 700px;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.248);
+}
+p{
+    font-size: 20px;
+}
+.save {
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+}
+.set{
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+}
+.all{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+}
+
+.card-contanainer{
+    width: 240px;
+    height: 100px;
+    perspective: 1000px;
+    cursor: pointer;
+    display: flex;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition:transform 0.7s;
+}
+.card-face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    backface-visibility: hidden;
+}
+
+.card-front{
+    background:white;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.248);
+}
+
+.hint{
+    margin-top: 24px;
+    font-size: 20px;
+    font-size: 12px;
+    opacity: 0.2;
+}
+.card-back{
+    background:white;
+    color: #000000;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.248);
+    transform: rotateY(180deg);
+}
+#display{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+p{
+    margin: 10px;
+}
+.inputs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

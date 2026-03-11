@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="contanainer">
+        <h2>Term & Definition &rarr; Flashcards</h2>
+        <div class="inputs">
+        <p>Term</p>
+        <input type="text" id="term"/> 
+        <p>Definition</p>
+        <textarea type="comments" id="definition"></textarea> <br>
+        </div>
+        <button class="save" onclick="saveTerm()">Save Term</button>
+        <button class="set" onclick="setFlashcard()">Generate Flashcards</button>
+        <button class="all" onclick="clearAll()">Clear All</button>
+
+        <p>Tip: Click to flip it</p>
+        <p id="display"></p>
+    </div>
+    
+</body>
+</html>
